@@ -5,33 +5,39 @@
  @DateTime: 2024/9/4 8:28
  @SoftWare: PyCharm
 """
-import os
+import logging
 import sys
-from datetime import time
-from logging import Logger
+
+# 1.配置日志记录器
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s -%(levelname)s -%(message)s',
+    handlers=[
+        logging.FileHandler('output2.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 
 
-class Logger(object):
+#
+class StreamToLogger:
 
-    def __init__(self, file_name="Default.log", stream=sys.stdout):
-        self.terminal = stream
-        self.log = open(file_name, "a")
+    def __init__(self, logger, log_level=logging.INFO):
+        self.logger = logger
+        self.log_level = log_level
+        self.linebuf = ''
 
-    def write(self, message):
-        self.terminal.write(message)
-        self.log.write(message)
+    def write(self, buf):
+        for line in buf.rstrip().splitlines():
+            self.logger.log(self.log_level, line)
 
     def flush(self):
         pass
 
+
 if __name__ == "__main__":
-    # 自定义目录存放日志文件
-    log_path = './Logs/'
-    if not os.path.exists(log_path):
-        os.makedirs(log_path)
-    # 日志文件名按照程序运行时间设置
-    log_file_name = log_path + 'log-' + time.strftime("%Y%m%d-%H%M%S", time.localtime()) + '.log'
-    # 记录正常的 print 信息
-    sys.stdout = Logger(log_file_name)
-    # 记录 traceback 异常信息
-    sys.stderr = Logger(log_file_name)
+    sys.stdout = StreamToLogger(logging.getLogger('STDOUT'), logging.INFO)
+    sys.stderr = StreamToLogger(logging.getLogger('STDERR'), logging.ERROR)
+
+    print("在测试一下！")
+    logging.info("这是info级别的日志输出")
