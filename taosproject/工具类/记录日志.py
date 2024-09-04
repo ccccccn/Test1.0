@@ -7,13 +7,15 @@
 """
 import logging
 import sys
+from datetime import datetime
 
+log_filename = datetime.now().strftime('%Y%m%d%H%M%S')
 # 1.配置日志记录器
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s -%(levelname)s -%(message)s',
     handlers=[
-        logging.FileHandler('output2.log'),
+        logging.FileHandler(f'{log_filename}.log'),
         logging.StreamHandler(sys.stdout)
     ]
 )
