@@ -1,0 +1,672 @@
+2024-09-04 16:49:32,812 -INFO -数据库建立完成！
+2024-09-04 16:49:32,813 -INFO -成功创建数据采集超级表！
+2024-09-04 16:49:32,816 -INFO -192.99.7.22采集子表已建立完成
+2024-09-04 16:49:32,816 -INFO -成功批量建立数据采集表
+2024-09-04 16:49:32,816 -INFO -所有统计表单于采集表单已建立完成
+2024-09-04 16:49:33,208 -INFO -creating snap7 client
+2024-09-04 16:49:33,208 -INFO -connecting to 0:102 rack 1 slot [41, 41, 41, 41, 41, 41, 41, 41]
+2024-09-04 16:49:33,208 -INFO -当前错误为：
+2024-09-04 16:49:33,208 -INFO -'int' object has no attribute 'encode'
+2024-09-04 16:49:33,252 -ERROR -multiprocessing.pool
+2024-09-04 16:49:33,252 -ERROR -.
+2024-09-04 16:49:33,252 -ERROR -RemoteTraceback
+2024-09-04 16:49:33,252 -ERROR -:
+2024-09-04 16:49:33,252 -ERROR -
+2024-09-04 16:49:33,253 -ERROR -"""
+2024-09-04 16:49:33,253 -ERROR -Traceback (most recent call last):
+2024-09-04 16:49:33,253 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 125, in worker
+2024-09-04 16:49:33,253 -ERROR -    result = (True, func(*args, **kwds))
+2024-09-04 16:49:33,253 -ERROR -                    ^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:49:33,253 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 51, in starmapstar
+2024-09-04 16:49:33,254 -ERROR -    return list(itertools.starmap(args[0], args[1]))
+2024-09-04 16:49:33,254 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:49:33,254 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 93, in process_ip
+2024-09-04 16:49:33,254 -ERROR -    asyncio.run(get_plc_data(ip, rack, slot, db_number, start_address, data_lengths, selected_ip))
+2024-09-04 16:49:33,254 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 190, in run
+2024-09-04 16:49:33,254 -ERROR -    return runner.run(main)
+2024-09-04 16:49:33,254 -ERROR -           ^^^^^^^^^^^^^^^^
+2024-09-04 16:49:33,254 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 118, in run
+2024-09-04 16:49:33,254 -ERROR -    return self._loop.run_until_complete(task)
+2024-09-04 16:49:33,254 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:49:33,254 -ERROR -  File "D:\python\Lib\asyncio\base_events.py", line 654, in run_until_complete
+2024-09-04 16:49:33,254 -ERROR -    return future.result()
+2024-09-04 16:49:33,254 -ERROR -           ^^^^^^^^^^^^^^^
+2024-09-04 16:49:33,254 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 51, in get_plc_data
+2024-09-04 16:49:33,254 -ERROR -    cnt = int(length / 5)
+2024-09-04 16:49:33,254 -ERROR -              ~~~~~~~^~~
+2024-09-04 16:49:33,254 -ERROR -TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 16:49:33,254 -ERROR -"""
+2024-09-04 16:49:33,254 -ERROR -The above exception was the direct cause of the following exception:
+2024-09-04 16:49:33,254 -ERROR -Traceback (most recent call last):
+2024-09-04 16:49:33,254 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 182, in <module>
+2024-09-04 16:49:33,254 -ERROR -run_data_collection(collect_plcs,selected_ip=ip_addresses)
+2024-09-04 16:49:33,254 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 97, in run_data_collection
+2024-09-04 16:49:33,255 -ERROR -pool.starmap(process_ip,[(plc,selected_ip) for plc in plcs])
+2024-09-04 16:49:33,255 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 375, in starmap
+2024-09-04 16:49:33,255 -ERROR -return self._map_async(func, iterable, starmapstar, chunksize).get()
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,255 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,256 -ERROR -^
+2024-09-04 16:49:33,257 -ERROR -^
+2024-09-04 16:49:33,257 -ERROR -^
+2024-09-04 16:49:33,257 -ERROR -^
+2024-09-04 16:49:33,257 -ERROR -^
+2024-09-04 16:49:33,257 -ERROR -^
+2024-09-04 16:49:33,257 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 774, in get
+2024-09-04 16:49:33,257 -ERROR -raise self._value
+2024-09-04 16:49:33,257 -ERROR -TypeError
+2024-09-04 16:49:33,257 -ERROR -:
+2024-09-04 16:49:33,257 -ERROR -unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 16:56:50,819 -INFO -数据库建立完成！
+2024-09-04 16:56:50,820 -INFO -成功创建数据采集超级表！
+2024-09-04 16:56:50,824 -INFO -192.99.7.22采集子表已建立完成
+2024-09-04 16:56:50,824 -INFO -成功批量建立数据采集表
+2024-09-04 16:56:50,825 -INFO -所有统计表单于采集表单已建立完成
+2024-09-04 16:56:51,206 -INFO -creating snap7 client
+2024-09-04 16:56:51,206 -INFO -connecting to 0:102 rack 1 slot [41, 41, 41, 41, 41, 41, 41, 41]
+2024-09-04 16:56:51,206 -INFO -当前错误为：
+2024-09-04 16:56:51,206 -INFO -'int' object has no attribute 'encode'
+2024-09-04 16:56:51,258 -ERROR -multiprocessing.pool
+2024-09-04 16:56:51,258 -ERROR -.
+2024-09-04 16:56:51,258 -ERROR -RemoteTraceback
+2024-09-04 16:56:51,258 -ERROR -:
+2024-09-04 16:56:51,258 -ERROR -
+2024-09-04 16:56:51,258 -ERROR -"""
+2024-09-04 16:56:51,258 -ERROR -Traceback (most recent call last):
+2024-09-04 16:56:51,258 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 125, in worker
+2024-09-04 16:56:51,258 -ERROR -    result = (True, func(*args, **kwds))
+2024-09-04 16:56:51,258 -ERROR -                    ^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:56:51,258 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 51, in starmapstar
+2024-09-04 16:56:51,258 -ERROR -    return list(itertools.starmap(args[0], args[1]))
+2024-09-04 16:56:51,258 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:56:51,258 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 94, in process_ip
+2024-09-04 16:56:51,258 -ERROR -    asyncio.run(get_plc_data(ip, rack, slot, db_number, start_address, data_lengths, selected_ip))
+2024-09-04 16:56:51,258 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 190, in run
+2024-09-04 16:56:51,258 -ERROR -    return runner.run(main)
+2024-09-04 16:56:51,258 -ERROR -           ^^^^^^^^^^^^^^^^
+2024-09-04 16:56:51,258 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 118, in run
+2024-09-04 16:56:51,258 -ERROR -    return self._loop.run_until_complete(task)
+2024-09-04 16:56:51,258 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:56:51,258 -ERROR -  File "D:\python\Lib\asyncio\base_events.py", line 654, in run_until_complete
+2024-09-04 16:56:51,258 -ERROR -    return future.result()
+2024-09-04 16:56:51,258 -ERROR -           ^^^^^^^^^^^^^^^
+2024-09-04 16:56:51,259 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 51, in get_plc_data
+2024-09-04 16:56:51,259 -ERROR -    cnt = int(length / 5)
+2024-09-04 16:56:51,259 -ERROR -              ~~~~~~~^~~
+2024-09-04 16:56:51,259 -ERROR -TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 16:56:51,259 -ERROR -"""
+2024-09-04 16:56:51,259 -ERROR -The above exception was the direct cause of the following exception:
+2024-09-04 16:56:51,259 -ERROR -Traceback (most recent call last):
+2024-09-04 16:56:51,259 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 183, in <module>
+2024-09-04 16:56:51,259 -ERROR -run_data_collection(collect_plcs,selected_ip=ip_addresses)
+2024-09-04 16:56:51,259 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 98, in run_data_collection
+2024-09-04 16:56:51,259 -ERROR -pool.starmap(process_ip,[(plc,selected_ip) for plc in plcs])
+2024-09-04 16:56:51,259 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 375, in starmap
+2024-09-04 16:56:51,259 -ERROR -return self._map_async(func, iterable, starmapstar, chunksize).get()
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,259 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,260 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -^
+2024-09-04 16:56:51,262 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 774, in get
+2024-09-04 16:56:51,263 -ERROR -raise self._value
+2024-09-04 16:56:51,263 -ERROR -TypeError
+2024-09-04 16:56:51,263 -ERROR -:
+2024-09-04 16:56:51,263 -ERROR -unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 16:59:40,356 -INFO -数据库建立完成！
+2024-09-04 16:59:40,358 -INFO -成功创建数据采集超级表！
+2024-09-04 16:59:40,363 -INFO -192.99.7.22采集子表已建立完成
+2024-09-04 16:59:40,363 -INFO -成功批量建立数据采集表
+2024-09-04 16:59:40,363 -INFO -所有统计表单于采集表单已建立完成
+2024-09-04 16:59:40,793 -INFO -creating snap7 client
+2024-09-04 16:59:40,793 -INFO -connecting to 0:102 rack 1 slot [41, 41, 41, 41, 41, 41, 41, 41]
+2024-09-04 16:59:40,793 -INFO -当前错误为：
+2024-09-04 16:59:40,793 -INFO -'int' object has no attribute 'encode'
+2024-09-04 16:59:40,837 -ERROR -multiprocessing.pool
+2024-09-04 16:59:40,837 -ERROR -.
+2024-09-04 16:59:40,837 -ERROR -RemoteTraceback
+2024-09-04 16:59:40,837 -ERROR -:
+2024-09-04 16:59:40,837 -ERROR -
+2024-09-04 16:59:40,837 -ERROR -"""
+2024-09-04 16:59:40,837 -ERROR -Traceback (most recent call last):
+2024-09-04 16:59:40,837 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 125, in worker
+2024-09-04 16:59:40,837 -ERROR -    result = (True, func(*args, **kwds))
+2024-09-04 16:59:40,837 -ERROR -                    ^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:59:40,837 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 51, in starmapstar
+2024-09-04 16:59:40,837 -ERROR -    return list(itertools.starmap(args[0], args[1]))
+2024-09-04 16:59:40,837 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:59:40,837 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 94, in process_ip
+2024-09-04 16:59:40,837 -ERROR -    asyncio.run(get_plc_data(ip, rack, slot, db_number, start_address, data_lengths, selected_ip))
+2024-09-04 16:59:40,837 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 190, in run
+2024-09-04 16:59:40,837 -ERROR -    return runner.run(main)
+2024-09-04 16:59:40,837 -ERROR -           ^^^^^^^^^^^^^^^^
+2024-09-04 16:59:40,837 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 118, in run
+2024-09-04 16:59:40,837 -ERROR -    return self._loop.run_until_complete(task)
+2024-09-04 16:59:40,837 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:59:40,837 -ERROR -  File "D:\python\Lib\asyncio\base_events.py", line 654, in run_until_complete
+2024-09-04 16:59:40,837 -ERROR -    return future.result()
+2024-09-04 16:59:40,837 -ERROR -           ^^^^^^^^^^^^^^^
+2024-09-04 16:59:40,837 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 51, in get_plc_data
+2024-09-04 16:59:40,837 -ERROR -    cnt = int(length / 5)
+2024-09-04 16:59:40,837 -ERROR -              ~~~~~~~^~~
+2024-09-04 16:59:40,837 -ERROR -TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 16:59:40,837 -ERROR -"""
+2024-09-04 16:59:40,837 -ERROR -The above exception was the direct cause of the following exception:
+2024-09-04 16:59:40,837 -ERROR -Traceback (most recent call last):
+2024-09-04 16:59:40,837 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 183, in <module>
+2024-09-04 16:59:40,838 -ERROR -run_data_collection(collect_plcs,selected_ip=ip_addresses)
+2024-09-04 16:59:40,838 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 98, in run_data_collection
+2024-09-04 16:59:40,838 -ERROR -pool.starmap(process_ip,[(plc,selected_ip) for plc in plcs])
+2024-09-04 16:59:40,838 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 375, in starmap
+2024-09-04 16:59:40,838 -ERROR -return self._map_async(func, iterable, starmapstar, chunksize).get()
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,838 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -^
+2024-09-04 16:59:40,839 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 774, in get
+2024-09-04 16:59:40,839 -ERROR -raise self._value
+2024-09-04 16:59:40,839 -ERROR -TypeError
+2024-09-04 16:59:40,839 -ERROR -:
+2024-09-04 16:59:40,839 -ERROR -unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 16:59:52,412 -INFO -数据库建立完成！
+2024-09-04 16:59:52,413 -INFO -成功创建数据采集超级表！
+2024-09-04 16:59:52,417 -INFO -192.99.7.22采集子表已建立完成
+2024-09-04 16:59:52,417 -INFO -成功批量建立数据采集表
+2024-09-04 16:59:52,417 -INFO -所有统计表单于采集表单已建立完成
+2024-09-04 16:59:52,836 -INFO -creating snap7 client
+2024-09-04 16:59:52,836 -INFO -connecting to 0:102 rack 1 slot [41, 41, 41, 41, 41, 41, 41, 41]
+2024-09-04 16:59:52,836 -INFO -当前错误为：
+2024-09-04 16:59:52,836 -INFO -'int' object has no attribute 'encode'
+2024-09-04 16:59:52,882 -ERROR -multiprocessing.pool
+2024-09-04 16:59:52,883 -ERROR -.
+2024-09-04 16:59:52,883 -ERROR -RemoteTraceback
+2024-09-04 16:59:52,883 -ERROR -:
+2024-09-04 16:59:52,883 -ERROR -
+2024-09-04 16:59:52,883 -ERROR -"""
+2024-09-04 16:59:52,883 -ERROR -Traceback (most recent call last):
+2024-09-04 16:59:52,883 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 125, in worker
+2024-09-04 16:59:52,883 -ERROR -    result = (True, func(*args, **kwds))
+2024-09-04 16:59:52,883 -ERROR -                    ^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:59:52,883 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 51, in starmapstar
+2024-09-04 16:59:52,883 -ERROR -    return list(itertools.starmap(args[0], args[1]))
+2024-09-04 16:59:52,883 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:59:52,883 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 94, in process_ip
+2024-09-04 16:59:52,883 -ERROR -    asyncio.run(get_plc_data(ip, rack, slot, db_number, start_address, data_lengths, selected_ip))
+2024-09-04 16:59:52,883 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 190, in run
+2024-09-04 16:59:52,883 -ERROR -    return runner.run(main)
+2024-09-04 16:59:52,883 -ERROR -           ^^^^^^^^^^^^^^^^
+2024-09-04 16:59:52,883 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 118, in run
+2024-09-04 16:59:52,883 -ERROR -    return self._loop.run_until_complete(task)
+2024-09-04 16:59:52,883 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 16:59:52,883 -ERROR -  File "D:\python\Lib\asyncio\base_events.py", line 654, in run_until_complete
+2024-09-04 16:59:52,883 -ERROR -    return future.result()
+2024-09-04 16:59:52,883 -ERROR -           ^^^^^^^^^^^^^^^
+2024-09-04 16:59:52,883 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 51, in get_plc_data
+2024-09-04 16:59:52,883 -ERROR -    cnt = int(length / 5)
+2024-09-04 16:59:52,883 -ERROR -              ~~~~~~~^~~
+2024-09-04 16:59:52,883 -ERROR -TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 16:59:52,883 -ERROR -"""
+2024-09-04 16:59:52,883 -ERROR -The above exception was the direct cause of the following exception:
+2024-09-04 16:59:52,883 -ERROR -Traceback (most recent call last):
+2024-09-04 16:59:52,883 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 183, in <module>
+2024-09-04 16:59:52,883 -ERROR -run_data_collection(collect_plcs,selected_ip=ip_addresses)
+2024-09-04 16:59:52,883 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 98, in run_data_collection
+2024-09-04 16:59:52,883 -ERROR -pool.starmap(process_ip,[(plc,selected_ip) for plc in plcs])
+2024-09-04 16:59:52,883 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 375, in starmap
+2024-09-04 16:59:52,884 -ERROR -return self._map_async(func, iterable, starmapstar, chunksize).get()
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,884 -ERROR -^
+2024-09-04 16:59:52,885 -ERROR -^
+2024-09-04 16:59:52,885 -ERROR -^
+2024-09-04 16:59:52,885 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 774, in get
+2024-09-04 16:59:52,885 -ERROR -raise self._value
+2024-09-04 16:59:52,885 -ERROR -TypeError
+2024-09-04 16:59:52,885 -ERROR -:
+2024-09-04 16:59:52,885 -ERROR -unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 17:00:09,735 -INFO -数据库建立完成！
+2024-09-04 17:00:09,736 -INFO -成功创建数据采集超级表！
+2024-09-04 17:00:09,739 -INFO -192.99.7.22采集子表已建立完成
+2024-09-04 17:00:09,739 -INFO -成功批量建立数据采集表
+2024-09-04 17:00:09,739 -INFO -所有统计表单于采集表单已建立完成
+2024-09-04 17:00:10,121 -INFO -creating snap7 client
+2024-09-04 17:00:10,121 -INFO -connecting to 0:102 rack 1 slot [41, 41, 41, 41, 41, 41, 41, 41]
+2024-09-04 17:00:10,121 -INFO -当前错误为：
+2024-09-04 17:00:10,121 -INFO -'int' object has no attribute 'encode'
+2024-09-04 17:00:10,165 -ERROR -multiprocessing.pool
+2024-09-04 17:00:10,165 -ERROR -.
+2024-09-04 17:00:10,165 -ERROR -RemoteTraceback
+2024-09-04 17:00:10,165 -ERROR -:
+2024-09-04 17:00:10,165 -ERROR -
+2024-09-04 17:00:10,165 -ERROR -"""
+2024-09-04 17:00:10,165 -ERROR -Traceback (most recent call last):
+2024-09-04 17:00:10,165 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 125, in worker
+2024-09-04 17:00:10,166 -ERROR -    result = (True, func(*args, **kwds))
+2024-09-04 17:00:10,166 -ERROR -                    ^^^^^^^^^^^^^^^^^^^
+2024-09-04 17:00:10,166 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 51, in starmapstar
+2024-09-04 17:00:10,166 -ERROR -    return list(itertools.starmap(args[0], args[1]))
+2024-09-04 17:00:10,166 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 17:00:10,166 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 94, in process_ip
+2024-09-04 17:00:10,166 -ERROR -    asyncio.run(get_plc_data(ip, rack, slot, db_number, start_address, data_lengths, selected_ip))
+2024-09-04 17:00:10,166 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 190, in run
+2024-09-04 17:00:10,166 -ERROR -    return runner.run(main)
+2024-09-04 17:00:10,166 -ERROR -           ^^^^^^^^^^^^^^^^
+2024-09-04 17:00:10,166 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 118, in run
+2024-09-04 17:00:10,166 -ERROR -    return self._loop.run_until_complete(task)
+2024-09-04 17:00:10,166 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 17:00:10,166 -ERROR -  File "D:\python\Lib\asyncio\base_events.py", line 654, in run_until_complete
+2024-09-04 17:00:10,166 -ERROR -    return future.result()
+2024-09-04 17:00:10,166 -ERROR -           ^^^^^^^^^^^^^^^
+2024-09-04 17:00:10,166 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 51, in get_plc_data
+2024-09-04 17:00:10,166 -ERROR -    cnt = int(length / 5)
+2024-09-04 17:00:10,166 -ERROR -              ~~~~~~~^~~
+2024-09-04 17:00:10,166 -ERROR -TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 17:00:10,166 -ERROR -"""
+2024-09-04 17:00:10,166 -ERROR -The above exception was the direct cause of the following exception:
+2024-09-04 17:00:10,166 -ERROR -Traceback (most recent call last):
+2024-09-04 17:00:10,166 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 183, in <module>
+2024-09-04 17:00:10,166 -ERROR -run_data_collection(collect_plcs,selected_ip=ip_addresses)
+2024-09-04 17:00:10,166 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 98, in run_data_collection
+2024-09-04 17:00:10,167 -ERROR -pool.starmap(process_ip,[(plc,selected_ip) for plc in plcs])
+2024-09-04 17:00:10,167 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 375, in starmap
+2024-09-04 17:00:10,167 -ERROR -return self._map_async(func, iterable, starmapstar, chunksize).get()
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,167 -ERROR -^
+2024-09-04 17:00:10,168 -ERROR -^
+2024-09-04 17:00:10,168 -ERROR -^
+2024-09-04 17:00:10,168 -ERROR -^
+2024-09-04 17:00:10,168 -ERROR -^
+2024-09-04 17:00:10,168 -ERROR -^
+2024-09-04 17:00:10,168 -ERROR -^
+2024-09-04 17:00:10,168 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,170 -ERROR -^
+2024-09-04 17:00:10,171 -ERROR -^
+2024-09-04 17:00:10,171 -ERROR -^
+2024-09-04 17:00:10,171 -ERROR -^
+2024-09-04 17:00:10,171 -ERROR -^
+2024-09-04 17:00:10,171 -ERROR -^
+2024-09-04 17:00:10,171 -ERROR -^
+2024-09-04 17:00:10,171 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 774, in get
+2024-09-04 17:00:10,171 -ERROR -raise self._value
+2024-09-04 17:00:10,171 -ERROR -TypeError
+2024-09-04 17:00:10,171 -ERROR -:
+2024-09-04 17:00:10,171 -ERROR -unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 17:01:35,417 -INFO -数据库建立完成！
+2024-09-04 17:01:35,418 -INFO -成功创建数据采集超级表！
+2024-09-04 17:01:35,423 -INFO -192.99.7.22采集子表已建立完成
+2024-09-04 17:01:35,423 -INFO -成功批量建立数据采集表
+2024-09-04 17:01:35,423 -INFO -所有统计表单于采集表单已建立完成
+2024-09-04 17:01:35,832 -INFO -creating snap7 client
+2024-09-04 17:01:35,832 -INFO -connecting to 0:102 rack 1 slot [41, 41, 41, 41, 41, 41, 41, 41]
+2024-09-04 17:01:35,832 -INFO -当前错误为：
+2024-09-04 17:01:35,833 -INFO -'int' object has no attribute 'encode'
+2024-09-04 17:01:35,871 -ERROR -multiprocessing.pool
+2024-09-04 17:01:35,871 -ERROR -.
+2024-09-04 17:01:35,871 -ERROR -RemoteTraceback
+2024-09-04 17:01:35,871 -ERROR -:
+2024-09-04 17:01:35,871 -ERROR -
+2024-09-04 17:01:35,871 -ERROR -"""
+2024-09-04 17:01:35,871 -ERROR -Traceback (most recent call last):
+2024-09-04 17:01:35,871 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 125, in worker
+2024-09-04 17:01:35,871 -ERROR -    result = (True, func(*args, **kwds))
+2024-09-04 17:01:35,871 -ERROR -                    ^^^^^^^^^^^^^^^^^^^
+2024-09-04 17:01:35,871 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 51, in starmapstar
+2024-09-04 17:01:35,871 -ERROR -    return list(itertools.starmap(args[0], args[1]))
+2024-09-04 17:01:35,871 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 17:01:35,871 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 94, in process_ip
+2024-09-04 17:01:35,871 -ERROR -    asyncio.run(get_plc_data(ip, rack, slot, db_numbers, start_addresses, data_lengths, selected_ip))
+2024-09-04 17:01:35,871 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 190, in run
+2024-09-04 17:01:35,871 -ERROR -    return runner.run(main)
+2024-09-04 17:01:35,871 -ERROR -           ^^^^^^^^^^^^^^^^
+2024-09-04 17:01:35,871 -ERROR -  File "D:\python\Lib\asyncio\runners.py", line 118, in run
+2024-09-04 17:01:35,872 -ERROR -    return self._loop.run_until_complete(task)
+2024-09-04 17:01:35,872 -ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-09-04 17:01:35,872 -ERROR -  File "D:\python\Lib\asyncio\base_events.py", line 654, in run_until_complete
+2024-09-04 17:01:35,872 -ERROR -    return future.result()
+2024-09-04 17:01:35,872 -ERROR -           ^^^^^^^^^^^^^^^
+2024-09-04 17:01:35,872 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 51, in get_plc_data
+2024-09-04 17:01:35,872 -ERROR -    cnt = int(length / 5)
+2024-09-04 17:01:35,872 -ERROR -              ~~~~~~~^~~
+2024-09-04 17:01:35,872 -ERROR -TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2024-09-04 17:01:35,872 -ERROR -"""
+2024-09-04 17:01:35,872 -ERROR -The above exception was the direct cause of the following exception:
+2024-09-04 17:01:35,872 -ERROR -Traceback (most recent call last):
+2024-09-04 17:01:35,872 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 183, in <module>
+2024-09-04 17:01:35,872 -ERROR -run_data_collection(collect_plcs,selected_ip=ip_addresses)
+2024-09-04 17:01:35,872 -ERROR -  File "D:\pycahrm\Test1.0\taosproject\plc_mulprocess\PLC采集_back_修改版3.py", line 98, in run_data_collection
+2024-09-04 17:01:35,872 -ERROR -pool.starmap(process_ip,[(plc,selected_ip) for plc in plcs])
+2024-09-04 17:01:35,872 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 375, in starmap
+2024-09-04 17:01:35,872 -ERROR -return self._map_async(func, iterable, starmapstar, chunksize).get()
+2024-09-04 17:01:35,872 -ERROR -^
+2024-09-04 17:01:35,872 -ERROR -^
+2024-09-04 17:01:35,872 -ERROR -^
+2024-09-04 17:01:35,872 -ERROR -^
+2024-09-04 17:01:35,872 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,873 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -^
+2024-09-04 17:01:35,874 -ERROR -  File "D:\python\Lib\multiprocessing\pool.py", line 774, in get
+2024-09-04 17:01:35,875 -ERROR -raise self._value
+2024-09-04 17:01:35,875 -ERROR -TypeError
+2024-09-04 17:01:35,875 -ERROR -:
+2024-09-04 17:01:35,875 -ERROR -unsupported operand type(s) for /: 'str' and 'int'
