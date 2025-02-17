@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d337768-168c-4966-b76b-2c0825811fd4" name="Changes" comment="新增gitignore">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB33.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB34.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB41.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/500FEMS_json文件/DBDB8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_10.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_11.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_12.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_13.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_14.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_15.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_16.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_17.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_18.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_19.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_8.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/CSV_file/flc_9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB37.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FCCS_json文件/DBDB7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB33.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB34.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB41.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/FEMSjson文件/DBDB8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/csv_deal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/data1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/data_recover.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB12block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB18block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB20block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB24block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB25block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB33block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB34block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB41block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB42block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB5block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/json文件/DB8block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据moni.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据交换类.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/500点位(分组).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/500点位.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/FCCS(分组).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/分组数据.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/分组数据_排序后(500点FEMS).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/分组数据_排序后(FCCS).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/分组数据_排序后(终极).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/分组数据_排序后.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/单飞轮舱点表(分组).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/数据处理/单飞轮舱点表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/工具类/记录日志.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2t9Og8XM9gE6tSpE11qNKzuHIF3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\pycahrm\\PyCharm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="新增gitignore">
+      <option name="closed" value="true" />
+      <created>1739419040441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739419040441</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d337768-168c-4966-b76b-2c0825811fd4" name="Changes" comment="新增gitignore" />
+      <created>1739760934610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739760934610</updated>
+      <workItem from="1739760936608" duration="3129000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="taos/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="taos/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/main' into 加入日志&#10;taos最新代码" />
+    <MESSAGE value="新增gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增gitignore" />
+  </component>
+</project>
