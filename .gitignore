@@ -8,4 +8,5 @@ ToolUtils
 .idea/misc.xml
 .idea/taosproject.iml
 .idea/vcs.xml
+.idea/workspace.xml
 
